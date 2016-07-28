@@ -94,8 +94,8 @@ Identify the type of relationships we will be creating.
 
 ## Step 5: Refactor Sighting Endpoints
 
-* POST a new `/api/sighting`, this time using the new _Sighting_ data and a _User_ id.
-* When GET `/api/sighting` is requested make sure to populate it with _User_ data before returning it to the client.
+<!-- * POST a new `/api/sighting`, this time using the new _Sighting_ data and a _User_ id. -->
+<!-- * When GET `/api/sighting` is requested make sure to populate it with _User_ data before returning it to the client. -->
 * Make it possible for the client to request sightings for a specific user by through sending the user id as a part of the request query in addition to `status`.
 
 ## Copyright

@@ -27,7 +27,9 @@ app.post('/api/users', function(req, res) {
 });
  
 app.get('/api/sighting', function(req, res) {
-	Sighting.find(req.query, function (err, result) {
+	Sighting.find(req.query.id)
+	.populate('user', 'username')
+	.exec( function (err, result) {
 	  	err ? res.status(500).send(err) : res.send(result)
 	})
 });
